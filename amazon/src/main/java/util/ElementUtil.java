@@ -87,7 +87,7 @@ public class ElementUtil {
     public void sendKey(By element, String text) {
         waitVisibility(element);
         findElement(element).sendKeys(text);
-        logger.info("Text is written");
+        logger.info("Text is written ");
     }
 
 

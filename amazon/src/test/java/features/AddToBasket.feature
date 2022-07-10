@@ -17,7 +17,6 @@ Feature: Checking login page test cases
     And user clicks for the forth product on page
     Then user control prices if equals
 
-
   @AddToBasketAndControl
   Scenario: Adding product to basket
     Given user searches for product "Jil sander parfum"
