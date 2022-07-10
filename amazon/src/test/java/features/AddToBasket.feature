@@ -1,7 +1,6 @@
 @HomePageTestCases
 Feature: Checking login page test cases
 
-
   Background: Checking SignUp button
     Given User controls link "https://www.amazon.nl/"
     And User accepts cookies
@@ -18,6 +17,7 @@ Feature: Checking login page test cases
     And user clicks for the forth product on page
     Then user control prices if equals
 
+
   @AddToBasketAndControl
   Scenario: Adding product to basket
     Given user searches for product "Jil sander parfum"
@@ -27,6 +27,8 @@ Feature: Checking login page test cases
     And user clicks for the forth product on page
     And user control prices if equals
     And user click to add basket button
+
+
 
 
 
