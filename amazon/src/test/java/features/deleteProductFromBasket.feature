@@ -9,16 +9,17 @@ Feature: Checking login page test cases
     Then user controls searching "product area" field
     Then user control "search button" in search area
 
-  @ComparePricesAfterAddBasket
-  Scenario: controlling first products price
+  @DeletingProductFromBasket
+  Scenario: User deletes product from basket
     Given user searches for product "Jil sander parfum"
     When user clicks search button
     And user should see '"Jil sander parfum"' searched keyword
     And user controls price of the forth product
     And user clicks for the forth product on page
     Then user control prices if equals
-
-  Scenario:
+    And user clicks to add basket button
+    And user goes to basket page
+    And user controls main title "Winkelwagen"
 
 
 

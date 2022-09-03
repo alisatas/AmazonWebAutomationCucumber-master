@@ -12,8 +12,18 @@ public class BasketPageStepDefs {
         basketPage.priceEqualsCheck();
     }
 
-    @And("user click to add basket button")
+    @And("user clicks to add basket button")
     public void userClickToAddBasketButton() {
         basketPage.clickAddBasket();
+    }
+
+    @And("user goes to basket page")
+    public void userGoesToBasketPage() {
+        basketPage.goToBasketPage();
+    }
+
+    @And("user controls main title {string}")
+    public void userControlsMainTitle(String shoppingMainTitle) {
+        basketPage.controlMainBasketTitle(shoppingMainTitle);
     }
 }

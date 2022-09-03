@@ -11,6 +11,8 @@ public class BasketPage {
     private ElementUtil elementUtil;
     private By text_forthProductDetailPrice=By.xpath("(//span[@class='a-price a-text-price'])[2]");
     private By button_addBasketButton=By.id("add-to-cart-button");
+    private By button_mainBasket=By.id("nav-cart-text-container");
+    private By text_basketPageTitle=By.cssSelector("[class='a-row sc-cart-header sc-compact-bottom'] div");
 
 
 
@@ -31,5 +33,13 @@ public class BasketPage {
 
     public void clickAddBasket() {
         elementUtil.clickElement(button_addBasketButton);
+    }
+
+    public void goToBasketPage() {
+        elementUtil.clickElement(button_mainBasket);
+    }
+
+    public void controlMainBasketTitle(String shoppingPageTitle) {
+        elementUtil.getText(text_basketPageTitle,shoppingPageTitle);
     }
 }
