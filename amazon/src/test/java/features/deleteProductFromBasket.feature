@@ -20,6 +20,8 @@ Feature: Checking login page test cases
     And user clicks to add basket button
     And user goes to basket page
     And user controls main title "Winkelwagen"
+    And user clicks to delete button
+
 
 
 

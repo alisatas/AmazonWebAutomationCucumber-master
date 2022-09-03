@@ -25,7 +25,7 @@ Feature: Checking login page test cases
     And user controls price of the forth product
     And user clicks for the forth product on page
     And user control prices if equals
-    And user click to add basket button
+    And user clicks to add basket button
 
 
 

@@ -14,8 +14,6 @@ public class BasketPage {
     private By button_mainBasket=By.id("nav-cart-text-container");
     private By text_basketPageTitle=By.cssSelector("[class='a-row sc-cart-header sc-compact-bottom'] div");
 
-
-
     public BasketPage(WebDriver driver) {
         this.driver = driver;
         this.elementUtil = new ElementUtil(driver);

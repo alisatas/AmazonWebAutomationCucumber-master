@@ -7,6 +7,7 @@ import util.DriverFactory;
 
 public class BasketPageStepDefs {
     private BasketPage basketPage=new BasketPage(DriverFactory.getDriver());
+
     @Then("user control prices if equals")
     public void userControlPricesIfEquals() throws InterruptedException {
         basketPage.priceEqualsCheck();
